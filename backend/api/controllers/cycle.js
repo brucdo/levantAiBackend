@@ -1,7 +1,7 @@
 const { Sequelize, DataTypes } = require("sequelize");
 const Cycle = require("../models/cycle");
 
-const config = new Sequelize("levantaai", "root", "", {
+const config = new Sequelize("levantai", "root", "", {
   host: "localhost",
   dialect: "mysql",
 });
