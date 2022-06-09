@@ -102,7 +102,7 @@ module.exports = {
           });
         } else {
           res.send({
-            message: `Cannot delete Cycle with id=${id}. Maybe User was not found!`,
+            message: `Cannot delete Cycle with id=${id}. Maybe Cycle was not found!`,
           });
         }
       })

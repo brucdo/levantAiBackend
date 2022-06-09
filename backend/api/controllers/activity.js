@@ -25,13 +25,13 @@ module.exports = {
           res.send(data);
         } else {
           res.status(404).send({
-            message: `Cannot find User with id=${id}.`,
+            message: `Cannot find Activity with id=${id}.`,
           });
         }
       })
       .catch((err) => {
         res.status(500).send({
-          message: `Error retrieving User with id=${id}`,
+          message: `Error retrieving Activity with id=${id}`,
         });
       });
   },
@@ -62,17 +62,17 @@ module.exports = {
       .then((num) => {
         if (num == 1) {
           res.send({
-            message: "User was updated successfully.",
+            message: "Activity was updated successfully.",
           });
         } else {
           res.send({
-            message: `Cannot update User with id=${id}.`,
+            message: `Cannot update Activity with id=${id}.`,
           });
         }
       })
       .catch((err) => {
         res.status(500).send({
-          message: `Error updating User with id=${id}.`,
+          message: `Error updating Activity with id=${id}.`,
         });
       });
   },
@@ -87,17 +87,17 @@ module.exports = {
       .then((num) => {
         if (num == 1) {
           res.send({
-            message: "User was deleted successfully!",
+            message: "Activity was deleted successfully!",
           });
         } else {
           res.send({
-            message: `Cannot delete User with id=${id}. Maybe User was not found!`,
+            message: `Cannot delete Activity with id=${id}. Maybe Activity was not found!`,
           });
         }
       })
       .catch((err) => {
         res.status(500).send({
-          message: `Error updating User with id=${id}.`,
+          message: `Error updating Activity with id=${id}.`,
         });
       });
   },
